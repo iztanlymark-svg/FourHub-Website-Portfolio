@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>FourHubWebPortfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<input class="state" type="radio" name="view" id="v-home" checked aria-label="Home">
+<input class="state" type="radio" name="view" id="v-members" aria-label="Members">
+<input class="state" type="radio" name="view" id="v-about" aria-label="About Us">
+<input class="state" type="radio" name="view" id ="v-projects" aria-label="Projects">
+<input class="state" type="radio" name="view" id="v-contact" aria-label="Contact">
+<input class="state" type="radio" name="view" id="v-r1" aria-label="Resume 1">
+<input class="state" type="radio" name="view" id="v-r2" aria-label="Resume 2">
+<input class="state" type="radio" name="view" id="v-r3" aria-label="Resume 3">
+<input class="state" type="radio" name="view" id="v-r4" aria-label="Resume 4">
+<input class="state" type="radio" name="view" id="v-m1" aria-label="Precious Althea L. Ramirez">
+<input class="state" type="radio" name="view" id="v-m2" aria-label="Angelo R. Cabangcala">
+<input class="state" type="radio" name="view" id="v-m3" aria-label="Mark Stanly P. Cortez">
+<input class="state" type="radio" name="view" id="v-m4" aria-label="Sam Louise A. Dacanay">
+
+<div class="bg" aria-hidden="true">
+  <span class="orb o1"></span>
+  <span class="orb o2"></span>
+  <span class="orb o3"></span>
+  <i class="ember" style="--x:4%;  --s:4px; --t:15s; --d:-2s;  --dx:30px"></i>
+  <i class="ember" style="--x:11%; --s:3px; --t:19s; --d:-9s;  --dx:-20px"></i>
+  <i class="ember" style="--x:18%; --s:5px; --t:13s; --d:-5s;  --dx:40px"></i>
+  <i class="ember" style="--x:26%; --s:3px; --t:21s; --d:-14s; --dx:-30px"></i>
+  <i class="ember" style="--x:34%; --s:4px; --t:16s; --d:-7s;  --dx:25px"></i>
+  <i class="ember" style="--x:42%; --s:3px; --t:18s; --d:-1s;  --dx:-35px"></i>
+  <i class="ember" style="--x:50%; --s:5px; --t:14s; --d:-11s; --dx:20px"></i>
+  <i class="ember" style="--x:58%; --s:4px; --t:20s; --d:-4s;  --dx:-25px"></i>
+  <i class="ember" style="--x:66%; --s:3px; --t:17s; --d:-13s; --dx:35px"></i>
+  <i class="ember" style="--x:73%; --s:5px; --t:15s; --d:-8s;  --dx:-40px"></i>
+  <i class="ember" style="--x:81%; --s:4px; --t:22s; --d:-3s;  --dx:20px"></i>
+  <i class="ember" style="--x:88%; --s:3px; --t:16s; --d:-10s; --dx:-20px"></i>
+  <i class="ember" style="--x:94%; --s:4px; --t:18s; --d:-6s;  --dx:30px"></i>
+  <i class="ember" style="--x:97%; --s:3px; --t:14s; --d:-12s; --dx:-30px"></i>
+</div>
+
+<div class="site">
+
+  <header class="bar">
+    <div class="wrap">
+      <label class="brand" for="v-home">FourHub</label>
+      <nav class="tabs" aria-label="Main">
+        <label class="tab t-home" for="v-home">Home</label>
+        <label class="tab t-about" for="v-about">About Us</label>
+        <label class="tab t-projects" for="v-projects">Projects</label>
+        <label class="tab t-contact" for="v-contact">Contact</label>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <section class="home">
+      <p class="eyebrow">Welcome</p>
+      <h1>Meet the <em>people</em> behind the work</h1>
+      <p class="lead">Four members, one team. Choose a member to read about them, see their skills, and find their contact details.</p>
+      <label class="cta cta-open" for="v-members">View Members</label>
+      <label class="cta cta-close" for="v-home">Hide Members</label>
+    </section>
+
+    <section class="cards" aria-label="Members">
+      <label class="card" for="v-m1">
+        <span class="avatar"><img src="althea.jpg" alt=""></span>
+        <span class="name">Precious Althea L. Ramirez</span>
+        <span class="role">Team Lead</span>
+        <span class="more">View profile</span>
+      </label>
+      <label class="card" for="v-m2">
+        <span class="avatar"><img src="angelo.jpg" alt=""></span>
+        <span class="name">Angelo R. Cabangcala</span>
+        <span class="role">Graphic Designer</span>
+        <span class="more">View profile</span>
+      </label>
+      <label class="card" for="v-m3">
+        <span class="avatar"><img src="stan.jpg" alt=""></span>
+        <span class="name">Mark Stanly P. Cortez</span>
+        <span class="role">Web Developer</span>
+        <span class="more">View profile</span>
+      </label>
+      <label class="card" for="v-m4">
+        <span class="avatar"><img src="sam.jpg" alt=""></span>
+        <span class="name">Sam Louise A. Dacanay</span>
+        <span class="role">Content Writer</span>
+        <span class="more">View profile</span>
+      </label>
+    </section>
+
+    <section class="page page-about">
+      <header class="page-head">
+        <p class="eyebrow">About us</p>
+        <h2>We are <em>FourHub</em></h2>
+        <p class="lead">FourHub is our web portfolio. It puts our team, our resumes, and our work in one simple place.</p>
+      </header>
+
+      <div class="stack">
+        <div class="trio">
+          <section class="panel">
+            <h3>Our goal</h3>
+            <p class="about-text">To show our team and our work clearly, so anyone who visits can quickly find out who we are and what each of us does.</p>
+          </section>
+          <section class="panel">
+            <h3>How we work</h3>
+            <p class="about-text">Every member has a role. We plan together, share ideas, and help each other so the work is finished on time.</p>
+          </section>
+          <section class="panel">
+            <h3>What we use</h3>
+            <p class="about-text">This website is built with only HTML and CSS, in orange and black, so it loads fast and works on any phone or computer.</p>
+          </section>
+        </div>
+
+        <section class="panel">
+          <h3>Roles in our team</h3>
+          <ul class="roles">
+            <li><span class="ro-role">Team Lead</span><span class="ro-name">Precious Althea L. Ramirez</span></li>
+            <li><span class="ro-role">Graphic Designer</span><span class="ro-name">Angelo R. Cabangcala</span></li>
+            <li><span class="ro-role">Web Developer</span><span class="ro-name">Mark Stanly P. Cortez</span></li>
+            <li><span class="ro-role">Content Writer</span><span class="ro-name">Sam Louise A. Dacanay</span></li>
+          </ul>
+        </section>
+
+        <section class="panel">
+          <h3>Questions</h3>
+          <details class="drop">
+            <summary>Who is behind this website?</summary>
+            <p>Four members of Fourhub: Precious Althea, Angelo, Mark Stanly, and Sam Louise. Open a member card on the Home tab to meet each one.</p>
+          </details>
+          <details class="drop">
+            <summary>Where can I see what each member is good at?</summary>
+            <p>Open a member card on the Home tab. Each member's page has their resume with their skills, and it can be downloaded as a PDF.</p>
+          </details>
+          <details class="drop">
+            <summary>How can I contact the team?</summary>
+            <p>Open the Contact tab to find every member's email, phone number, and Facebook profile.</p>
+          </details>
+        </section>
+      </div>
+    </section>
+
+    <section class="page page-projects">
+      <header class="page-head">
+        <p class="eyebrow">Projects</p>
+        <h2>Things we <em>made</em></h2>
+        <p class="lead">Two projects made by our whole group.</p>
+      </header>
+
+      <div class="projects">
+        <article class="project">
+          <span class="pic"><img src="projects/project-website.jpg" alt="FourHub website preview"></span>
+          <h3>FourHub Website</h3>
+          <p class="meta">Made by all 4 members</p>
+          <p>Our team website, made with HTML and CSS. It introduces every member, shows their resume, and works on phones and computers.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>No JavaScript</li></ul>
+          <details class="drop">
+            <summary>Who did what</summary>
+            <ul class="crew">
+              <li><span class="avatar sm"><img src="althea.jpg" alt=""></span><span><b>Precious Althea L. Ramirez</b><em>Planned the work</em></span></li>
+              <li><span class="avatar sm"><img src="angelo.jpg" alt=""></span><span><b>Angelo R. Cabangcala</b><em>Designed the look</em></span></li>
+              <li><span class="avatar sm"><img src="stan.jpg" alt=""></span><span><b>Mark Stanly P. Cortez</b><em>Wrote the code</em></span></li>
+              <li><span class="avatar sm"><img src="sam.jpg" alt=""></span><span><b>Sam Louise A. Dacanay</b><em>Wrote the words</em></span></li>
+            </ul>
+          </details>
+        </article>
+        <article class="project">
+          <span class="pic"><img src="projects/project-poster.jpg" alt="Night of Arts poster set"></span>
+          <h3>Group Poster Set</h3>
+          <p class="meta">Made by all 4 members</p>
+          <p>Posters for our school event in orange and black. We shared ideas, picked the colors together, and checked every poster as a team.</p>
+          <ul class="tags"><li>Poster</li><li>Logo</li><li>Colors</li></ul>
+          <details class="drop">
+            <summary>Who did what</summary>
+            <ul class="crew">
+              <li><span class="avatar sm"><img src="althea.jpg" alt=""></span><span><b>Precious Althea L. Ramirez</b><em>Planned the event</em></span></li>
+              <li><span class="avatar sm"><img src="angelo.jpg" alt=""></span><span><b>Angelo R. Cabangcala</b><em>Designed the posters</em></span></li>
+              <li><span class="avatar sm"><img src="stan.jpg" alt=""></span><span><b>Mark Stanly P. Cortez</b><em>Prepared the files</em></span></li>
+              <li><span class="avatar sm"><img src="sam.jpg" alt=""></span><span><b>Sam Louise A. Dacanay</b><em>Wrote the poster text</em></span></li>
+            </ul>
+          </details>
+        </article>
+      </div>
+    </section>
+
+    <section class="page page-contact">
+      <header class="page-head">
+        <p class="eyebrow">Contact</p>
+        <h2>Let's <em>get in touch</em></h2>
+        <p class="lead">Send an email, call, or tap Facebook to open a member's profile.</p>
+      </header>
+
+      <div class="contact-grid">
+        <article class="contact-card">
+          <div class="c-top">
+            <span class="avatar sm">PR<img src="althea.jpg" alt=""></span>
+            <div>
+              <h3>Precious Althea L. Ramirez</h3>
+              <p class="role">Team Lead</p>
+            </div>
+          </div>
+          <dl class="cinfo">
+            <div><dt>Email</dt><dd><a href="mailto:xoxoalthea20@gmail.com">xoxoalthea20@gmail.com</a></dd></div>
+            <div><dt>Phone</dt><dd>09928699389</dd></div>
+            <div><dt>Available</dt><dd>Weekdays, 9 AM to 5 PM</dd></div>
+          </dl>
+        
+          <a class="fb" href="https://www.facebook.com/share/1H1pwHAawb" target="_blank" rel="noopener noreferrer">Facebook &#8599;</a>
+        </article>
+        <article class="contact-card">
+          <div class="c-top">
+            <span class="avatar sm">AC<img src="angelo.jpg" alt=""></span>
+            <div>
+              <h3>Angelo R. Cabangcala</h3>
+              <p class="role">Graphic Designer</p>
+            </div>
+          </div>
+          <dl class="cinfo">
+            <div><dt>Email</dt><dd><a href="mailto:angelocabangcala54321@gmail.com">angelocabangcala54321@gmail.com</a></dd></div>
+            <div><dt>Phone</dt><dd>09452261082</dd></div>
+            <div><dt>Available</dt><dd>Mon to Sat, 10 AM to 6 PM</dd></div>
+          </dl>
+        
+          <a class="fb" href="https://www.facebook.com/share/1GtcVS31ZE/" target="_blank" rel="noopener noreferrer">Facebook &#8599;</a>
+        </article>
+        <article class="contact-card">
+          <div class="c-top">
+            <span class="avatar sm">MC<img src="stan.jpg" alt=""></span>
+            <div>
+              <h3>Mark Stanly P. Cortez</h3>
+              <p class="role">Web Developer</p>
+            </div>
+          </div>
+          <dl class="cinfo">
+            <div><dt>Email</dt><dd><a href="mailto:iztanlymark@gmail.com">iztanlymark@gmail.com</a></dd></div>
+            <div><dt>Phone</dt><dd>09610218254</dd></div>
+            <div><dt>Available</dt><dd>Weekdays, 1 PM to 9 PM</dd></div>
+          </dl>
+
+          <a class="fb" href="https://www.facebook.com/share/1GmXJqxqRq/" target="_blank" rel="noopener noreferrer">Facebook &#8599;</a>
+        </article>
+        <article class="contact-card">
+          <div class="c-top">
+            <span class="avatar sm">SD<img src="sam.jpg" alt=""></span>
+            <div>
+              <h3>Sam Louise A. Dacanay</h3>
+              <p class="role">Content Writer</p>
+            </div>
+          </div>
+          <dl class="cinfo">
+            <div><dt>Email</dt><dd><a href="mailto:samlouisedacanay@gmail.com">samlouisedacanay@gmail.com</a></dd></div>
+            <div><dt>Phone</dt><dd>09389895649</dd></div>
+            <div><dt>Available</dt><dd>Weekdays, 8 AM to 4 PM</dd></div>
+          </dl>
+          <a class="fb" href="https://www.facebook.com/share/1McxRcFCZE/" target="_blank" rel="noopener noreferrer">Facebook &#8599;</a>
+        </article>
+      </div>
+    </section>
+
+    <article class="resume" id="r1">
+      <div class="r-bar">
+        <label class="back" for="v-m1">&larr; Back to profile</label>
+        <a class="dl" target="_blank" rel="noopener" href="resumes/resume-althea.pdf" download="Precious-Althea-Ramirez-Resume.pdf">Download Resume</a>
+      </div>
+
+      <div class="paper">
+        <div class="paper-head">
+          <span class="avatar big">PR<img src="althea.jpg" alt=""></span>
+          <div>
+            <h3 class="r-name">Precious Althea L. Ramirez</h3>
+            <p class="r-role">Team Lead</p>
+            <p class="r-group">Fourhub &middot; FourHub web portfolio</p>
+          </div>
+        </div>
+        <div class="paper-body">
+          <aside class="paper-side">
+            <section>
+              <h4>Contact</h4>
+              <dl class="rc"><div><dt>Email</dt><dd>xoxoalthea20@gmail.com</dd></div><div><dt>Phone</dt><dd>09928699389</dd></div><div><dt>Social</dt><dd>xoxo.preshaus</dd></div><div><dt>Available</dt><dd>Weekdays, 9 AM to 5 PM</dd></div></dl>
+            </section>
+            <section>
+              <h4>Skills</h4>
+              <ul class="rskills"><li><span>Leadership</span><span class="pct">92%</span><span class="rbar"><i style="--v:92%"></i></span></li><li><span>Communication</span><span class="pct">90%</span><span class="rbar"><i style="--v:90%"></i></span></li><li><span>Project planning</span><span class="pct">88%</span><span class="rbar"><i style="--v:88%"></i></span></li><li><span>Problem solving</span><span class="pct">85%</span><span class="rbar"><i style="--v:85%"></i></span></li></ul>
+            </section>
+          </aside>
+          <div class="paper-main">
+            <section>
+              <h4>Profile</h4>
+              <p>Team Lead of Fourhub. Plans the team&#x27;s work, helps teammates when they are stuck, and makes sure every project is finished on time. Believes the best work happens when everyone&#x27;s ideas are heard.</p>
+            </section>
+            <section>
+              <h4>What I do in the team</h4>
+              <ul class="duties"><li>Plans the work for the whole team</li><li>Helps teammates when they are stuck</li><li>Makes sure everything is finished on time</li></ul>
+            </section>
+            <section>
+              <h4>Team project</h4>
+              <p><strong>FourHub</strong> is the web portfolio of Fourhub, built with HTML and CSS in orange and black. My role in the project is <strong>Team Lead</strong>.</p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="resume" id="r2">
+      <div class="r-bar">
+        <label class="back" for="v-m2">&larr; Back to profile</label>
+        <a class="dl" target="_blank" rel="noopener" href="resumes/resume-angelo.pdf" download="Angelo-Cabangcala-Resume.pdf">Download Resume</a>
+      </div>
+
+      <div class="paper">
+        <div class="paper-head">
+          <span class="avatar big">AC<img src="angelo.jpg" alt=""></span>
+          <div>
+            <h3 class="r-name">Angelo R. Cabangcala</h3>
+            <p class="r-role">Graphic Designer</p>
+            <p class="r-group">Fourhub &middot; FourHub web portfolio</p>
+          </div>
+        </div>
+        <div class="paper-body">
+          <aside class="paper-side">
+            <section>
+              <h4>Contact</h4>
+              <dl class="rc"><div><dt>Email</dt><dd>angelocabangcala54321@gmail.com</dd></div><div><dt>Phone</dt><dd>09452261082</dd></div><div><dt>Social</dt><dd>aesthgelo_4</dd></div><div><dt>Available</dt><dd>Mon to Sat, 10 AM to 6 PM</dd></div></dl>
+            </section>
+            <section>
+              <h4>Skills</h4>
+              <ul class="rskills"><li><span>Illustration</span><span class="pct">94%</span><span class="rbar"><i style="--v:94%"></i></span></li><li><span>Branding</span><span class="pct">90%</span><span class="rbar"><i style="--v:90%"></i></span></li><li><span>Layout design</span><span class="pct">86%</span><span class="rbar"><i style="--v:86%"></i></span></li><li><span>Photo editing</span><span class="pct">80%</span><span class="rbar"><i style="--v:80%"></i></span></li></ul>
+            </section>
+          </aside>
+          <div class="paper-main">
+            <section>
+              <h4>Profile</h4>
+              <p>Graphic Designer of Fourhub. Takes care of colors, pictures, and how things look. Enjoys drawing and looking at different designs, and wants to keep learning to get better at it.</p>
+            </section>
+            <section>
+              <h4>What I do in the team</h4>
+              <ul class="duties"><li>Makes logos, posters, and pictures</li><li>Chooses colors and fonts that match</li><li>Checks that every design looks neat</li></ul>
+            </section>
+            <section>
+              <h4>Team project</h4>
+              <p><strong>FourHub</strong> is the web portfolio of Fourhub, built with HTML and CSS in orange and black. My role in the project is <strong>Graphic Designer</strong>.</p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="resume" id="r3">
+      <div class="r-bar">
+        <label class="back" for="v-m3">&larr; Back to profile</label>
+        <a class="dl" target="_blank" rel="noopener" href="resumes/resume-stanly.pdf" download="Mark-Stanly-Cortez-Resume.pdf">Download Resume</a>
+      </div>
+
+      <div class="paper">
+        <div class="paper-head">
+          <span class="avatar big">MC<img src="stan.jpg" alt=""></span>
+          <div>
+            <h3 class="r-name">Mark Stanly P. Cortez</h3>
+            <p class="r-role">Web Developer</p>
+            <p class="r-group">Fourhub &middot; FourHub web portfolio</p>
+          </div>
+        </div>
+        <div class="paper-body">
+          <aside class="paper-side">
+            <section>
+              <h4>Contact</h4>
+              <dl class="rc"><div><dt>Email</dt><dd>iztanlymark@gmail.com</dd></div><div><dt>Phone</dt><dd>09610218254</dd></div><div><dt>Social</dt><dd>aintmark712</dd></div><div><dt>Available</dt><dd>Weekdays, 1 PM to 9 PM</dd></div></dl>
+            </section>
+            <section>
+              <h4>Skills</h4>
+              <ul class="rskills"><li><span>HTML</span><span class="pct">95%</span><span class="rbar"><i style="--v:95%"></i></span></li><li><span>CSS</span><span class="pct">92%</span><span class="rbar"><i style="--v:92%"></i></span></li><li><span>Responsive design</span><span class="pct">88%</span><span class="rbar"><i style="--v:88%"></i></span></li><li><span>Accessibility</span><span class="pct">78%</span><span class="rbar"><i style="--v:78%"></i></span></li></ul>
+            </section>
+          </aside>
+          <div class="paper-main">
+            <section>
+              <h4>Profile</h4>
+              <p>Web Developer of Fourhub. Builds the team&#x27;s website with HTML and CSS and makes it work on any phone or computer. Likes finding and fixing problems so everything works well.</p>
+            </section>
+            <section>
+              <h4>What I do in the team</h4>
+              <ul class="duties"><li>Builds the website with code</li><li>Makes pages work on phones and computers</li><li>Finds and fixes problems</li></ul>
+            </section>
+            <section>
+              <h4>Team project</h4>
+              <p><strong>FourHub</strong> is the web portfolio of Fourhu, built with HTML and CSS in orange and black. My role in the project is <strong>Web Developer</strong>.</p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="resume" id="r4">
+      <div class="r-bar">
+        <label class="back" for="v-m4">&larr; Back to profile</label>
+        <a class="dl" target="_blank" rel="noopener" href="resumes/resume-sam.pdf" download="Sam-Louise-Dacanay-Resume.pdf">Download Resume</a>
+      </div>
+
+      <div class="paper">
+        <div class="paper-head">
+          <span class="avatar big">SD<img src="sam.jpg" alt=""></span>
+          <div>
+            <h3 class="r-name">Sam Louise A. Dacanay</h3>
+            <p class="r-role">Content Writer</p>
+            <p class="r-group">Fourhub &middot; FourHub web portfolio</p>
+          </div>
+        </div>
+        <div class="paper-body">
+          <aside class="paper-side">
+            <section>
+              <h4>Contact</h4>
+              <dl class="rc"><div><dt>Email</dt><dd>samlouisedacanay@gmail.com</dd></div><div><dt>Phone</dt><dd>09389895649</dd></div><div><dt>Social</dt><dd>samdcnay_</dd></div><div><dt>Available</dt><dd>Weekdays, 8 AM to 4 PM</dd></div></dl>
+            </section>
+            <section>
+              <h4>Skills</h4>
+              <ul class="rskills"><li><span>Copywriting</span><span class="pct">93%</span><span class="rbar"><i style="--v:93%"></i></span></li><li><span>Storytelling</span><span class="pct">90%</span><span class="rbar"><i style="--v:90%"></i></span></li><li><span>Editing</span><span class="pct">87%</span><span class="rbar"><i style="--v:87%"></i></span></li><li><span>Research</span><span class="pct">82%</span><span class="rbar"><i style="--v:82%"></i></span></li></ul>
+            </section>
+          </aside>
+          <div class="paper-main">
+            <section>
+              <h4>Profile</h4>
+              <p>Content Writer of Fourhub. Writes the words for the team&#x27;s projects in simple language so everyone can understand the ideas, and reads every piece again to fix mistakes before it is shared.</p>
+            </section>
+            <section>
+              <h4>What I do in the team</h4>
+              <ul class="duties"><li>Writes the words and stories</li><li>Uses simple words everyone understands</li><li>Reads the work again to fix mistakes</li></ul>
+            </section>
+            <section>
+              <h4>Team project</h4>
+              <p><strong>FourHub</strong> is the web portfolio of Fourhub, built with HTML and CSS in orange and black. My role in the project is <strong>Content Writer</strong>.</p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="profile" id="p1">
+      <div class="p-head">
+        <span class="avatar big"><img src="althea.jpg" alt=""></span>
+        <div>
+          <h2>Precious Althea L. Ramirez</h2>
+          <p class="role">Team Lead</p>
+        </div>
+      </div>
+      <div class="panels">
+        <section class="panel wide">
+          <h3>Personal info</h3>
+          <dl class="facts">
+            <div class="fact"><dt>Birthday</dt><dd>October 30, 2008</dd></div>
+            <div class="fact"><dt>Age</dt><dd>17 yrs old</dd></div>
+            <div class="fact"><dt>Favorite color</dt><dd><span class="swatch" style="--c:pink"></span>Pink</dd></div>
+          </dl>
+        </section>
+        <section class="panel wide">
+          <h3>Motto</h3>
+          <p class="motto">&ldquo;Let whoever think whatever.&rdquo;</p>
+        </section>
+        <div class="duo">
+          <section class="panel">
+            <h3>Hobbies</h3>
+            <ul class="tags">
+              <li>Dancing</li>
+              <li>Listening to Music</li>
+              <li>Drawing</li>
+            </ul>
+          </section>
+          <section class="panel">
+            <h3>Languages</h3>
+           <ul class="langs">
+  <li>
+    <div class="lang-row"><span>Ilocano</span><span>100%</span></div>
+    <div class="lang-track"><i style="width:100%"></i></div>
+  </li>
+  <li>
+    <div class="lang-row"><span>Tagalog</span><span>90%</span></div>
+    <div class="lang-track"><i style="width:90%"></i></div>
+  </li>
+  <li>
+    <div class="lang-row"><span>English</span><span>80%</span></div>
+    <div class="lang-track"><i style="width:80%"></i></div>
+  </li>
+</ul>
+          </section>
+        </div>
+      </div>
+      <div class="rview">
+        <label class="cta" for="v-r1">View Resume</label>
+      </div>
+      <div class="p-foot">
+        <label class="back all" for="v-members">&larr; All members</label>
+        <label class="next" for="v-m2">Next: Angelo &rarr;</label>
+      </div>
+    </article>
+
+    <article class="profile" id="p2">
+      <div class="p-head">
+        <span class="avatar big"><img src="angelo.jpg" alt=""></span>
+        <div>
+          <h2>Angelo R. Cabangcala</h2>
+          <p class="role">Graphic Designer</p>
+        </div>
+      </div>
+      <div class="panels">
+        <section class="panel wide">
+          <h3>Personal info</h3>
+          <dl class="facts">
+            <div class="fact"><dt>Birthday</dt><dd>August 11, 2007</dd></div>
+            <div class="fact"><dt>Age</dt><dd>19 yrs old</dd></div>
+            <div class="fact"><dt>Favorite color</dt><dd><span class="swatch" style="--c:skyblue"></span>Sky Blue</dd></div>
+          </dl>
+        </section>
+        <section class="panel wide">
+          <h3>Motto</h3>
+          <p class="motto">&ldquo;Never give up on your dreams, because hard work leads to success.&rdquo;</p>
+        </section>
+        <div class="duo">
+          <section class="panel">
+            <h3>Hobbies</h3>
+            <ul class="tags">
+              <li>Playing Volleyball</li>
+              <li>Hanging out with friends</li>
+              <li>Playing online games</li>
+            </ul>
+          </section>
+          <section class="panel">
+            <h3>Languanges</h3>
+<ul class="langs">
+  <li>
+    <div class="lang-row"><span>Ilocano</span><span>100%</span></div>
+    <div class="lang-track"><i style="width:100%"></i></div>
+  </li>
+  <li>
+    <div class="lang-row"><span>Tagalog</span><span>90%</span></div>
+    <div class="lang-track"><i style="width:90%"></i></div>
+  </li>
+  <li>
+    <div class="lang-row"><span>English</span><span>80%</span></div>
+    <div class="lang-track"><i style="width:80%"></i></div>
+  </li>
+</ul>
+          </section>
+        </div>
+      </div>
+      <div class="rview">
+        <label class="cta" for="v-r2">View Resume</label>
+      </div>
+      <div class="p-foot">
+        <label class="back prev" for="v-m1">&larr; Previous: Althea</label>
+        <label class="back all" for="v-members">&larr; All members</label>
+        <label class="next" for="v-m3">Next: Stan &rarr;</label>
+      </div>
+    </article>
+
+    <article class="profile" id="p3">
+      <div class="p-head">
+        <span class="avatar big"><img src="stan.jpg" alt=""></span>
+        <div>
+          <h2>Mark Stanly P. Cortez</h2>
+          <p class="role">Web Developer</p>
+        </div>
+      </div>
+      <div class="panels">
+        <section class="panel wide">
+          <h3>Personal info</h3>
+          <dl class="facts">
+            <div class="fact"><dt>Birthday</dt><dd>June 15, 2008</dd></div>
+            <div class="fact"><dt>Age</dt><dd>18 yrs old</dd></div>
+            <div class="fact"><dt>Favorite color</dt><dd><span class="swatch" style="--c:Purple"></span>Purple</dd></div>
+          </dl>
+        </section>
+        <section class="panel wide">
+          <h3>Motto</h3>
+          <p class="motto">&ldquo;If nothing goes right, go left.&rdquo;</p>
+        </section>
+        <div class="duo">
+          <section class="panel">
+            <h3>Hobbies</h3>
+            <ul class="tags">
+              <li>Playing Games</li>
+              <li>Lying on my bed all day</li>
+              <li>Doing whatever i think is Fun</li>
+            </ul>
+          </section>
+          <section class="panel">
+            <h3>Languages</h3>
+           <ul class="langs">
+  <li>
+    <div class="lang-row"><span>Tagalog</span><span>100%</span></div>
+    <div class="lang-track"><i style="width:100%"></i></div>
+  </li>
+  <li>
+    <div class="lang-row"><span>Ilocano</span><span>85%</span></div>
+    <div class="lang-track"><i style="width:85%"></i></div>
+  </li>
+  <li>
+    <div class="lang-row"><span>English</span><span>80%</span></div>
+    <div class="lang-track"><i style="width:80%"></i></div>
+  </li>
+</ul>
+          </section>
+        </div>
+      </div>
+      <div class="rview">
+        <label class="cta" for="v-r3">View Resume</label>
+      </div>
+      <div class="p-foot">
+        <label class="back prev" for="v-m2">&larr; Previous: Angelo</label>
+        <label class="back all" for="v-members">&larr; All members</label>
+        <label class="next" for="v-m4">Next: Sam &rarr;</label>
+      </div>
+    </article>
+
+    <article class="profile" id="p4">
+      <div class="p-head">
+        <span class="avatar big"><img src="sam.jpg" alt=""></span>
+        <div>
+          <h2>Sam Louise A. Dacanay</h2>
+          <p class="role">Content Writer</p>
+        </div>
+      </div>
+      <div class="panels">
+        <section class="panel wide">
+          <h3>Personal info</h3>
+          <dl class="facts">
+            <div class="fact"><dt>Birthday</dt><dd>December 24, 2007</dd></div>
+            <div class="fact"><dt>Age</dt><dd>18 yrs old</dd></div>
+            <div class="fact"><dt>Favorite color</dt><dd><span class="swatch" style="--c:Yellow"></span>Yellow</dd></div>
+          </dl>
+        </section>
+        <section class="panel wide">
+          <h3>Motto</h3>
+          <p class="motto">&ldquo;Work hard, Stay humble and Be kind.&rdquo;</p>
+        </section>
+        <div class="duo">
+          <section class="panel">
+            <h3>Hobbies</h3>
+            <ul class="tags">
+              <li>Basketball</li>
+              <li>Online Games</li>
+              <li>Watching Movies</li>
+            </ul>
+          </section>
+          <section class="panel">
+            <h3>Language</h3>
+<ul class="langs">
+  <li>
+    <div class="lang-row"><span>Ilocano</span><span>100%</span></div>
+    <div class="lang-track"><i style="width:100%"></i></div>
+  </li>
+  <li>
+    <div class="lang-row"><span>Tagalog</span><span>95%</span></div>
+    <div class="lang-track"><i style="width:90%"></i></div>
+  </li>
+  <li>
+    <div class="lang-row"><span>English</span><span>89%</span></div>
+    <div class="lang-track"><i style="width:89%"></i></div>
+  </li>
+  <li>
+    <div class="lang-row"><span>Bisaya</span><span>67%</span></div>
+    <div class="lang-track"><i style="width:67%"></i></div>
+  </li>
+</ul>          </section>
+        </div>
+      </div>
+      <div class="rview">
+        <label class="cta" for="v-r4">View Resume</label>
+      </div>
+      <div class="p-foot">
+        <label class="back prev" for="v-m3">&larr; Previous: Stan</label>
+        <label class="back all" for="v-members">&larr; All members</label>
+      </div>
+    </article>
+
+  </main>
+</div>
+</body>
+</html>
